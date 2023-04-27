@@ -1,2 +1,5 @@
-json.extract! dream, :id, :nome, :descrizione, :created_at, :updated_at
-json.url dream_url(dream, format: :json)
+json.id dream.id
+json.nome dream.nome
+json.descrizione dream.descrizione
+json.cover url_for(dream.cover)
+json.url dream_url(dream)
