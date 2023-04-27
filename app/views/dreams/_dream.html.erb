@@ -1,0 +1,16 @@
+<div id="<%= dom_id dream %>">
+  <p>
+    <% if dream.cover.attached? %>
+      <%= image_tag url_for(dream.cover), class: 'w-100', style: 'max-width: 300px;' %>
+    <% end %>
+  </p>
+  <p>
+    <strong>Nome:</strong>
+    <%= dream.nome %>
+  </p>
+
+  <p>
+    <strong>Descrizione:</strong>
+    <%= dream.descrizione %>
+  </p>
+</div>
