@@ -1,0 +1,44 @@
+<div id="<%= dom_id boat %>">
+  <p>
+    <strong>Immagine:</strong>
+    <% if boat.immagine.attached? %>
+      <%= image_tag url_for(boat.immagine), class: 'w-100', style: 'max-width: 300px;' %>
+    <% end %>
+  </p>
+  
+  <p>
+    <strong>Nome:</strong>
+    <%= boat.nome %>
+  </p>
+
+  <p>
+    <strong>Descrizione:</strong>
+    <%= boat.descrizione %>
+  </p>
+
+  <p>
+    <strong>Tipo:</strong>
+    <%= boat.tipo %>
+  </p>
+
+  <p>
+    <strong>Prezzo:</strong>
+    <%= boat.prezzo %>
+  </p>
+
+  <p>
+    <strong>Lunghezza:</strong>
+    <%= boat.lunghezza %>
+  </p>
+
+  <p>
+    <strong>Anno:</strong>
+    <%= boat.anno %>
+  </p>
+
+  <p>
+    <strong>Porto:</strong>
+    <%= boat.porto %>
+  </p>
+
+</div>

@@ -1,0 +1,57 @@
+<%= form_with(model: boat) do |form| %>
+  <% if boat.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(boat.errors.count, "error") %> prohibited this boat from being saved:</h2>
+
+      <ul>
+        <% boat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :descrizione, style: "display: block" %>
+    <%= form.text_field :descrizione %>
+  </div>
+
+  <div>
+    <%= form.label :tipo, style: "display: block" %>
+    <%= form.text_field :tipo %>
+  </div>
+
+  <div>
+    <%= form.label :prezzo, style: "display: block" %>
+    <%= form.number_field :prezzo %>
+  </div>
+
+  <div>
+    <%= form.label :lunghezza, style: "display: block" %>
+    <%= form.number_field :lunghezza %>
+  </div>
+
+  <div>
+    <%= form.label :anno, style: "display: block" %>
+    <%= form.number_field :anno %>
+  </div>
+
+  <div>
+    <%= form.label :porto, style: "display: block" %>
+    <%= form.text_field :porto %>
+  </div>
+
+  <div>
+    <%= form.label :immagine, style: "display: block" %>
+    <%= form.file_field :immagine %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

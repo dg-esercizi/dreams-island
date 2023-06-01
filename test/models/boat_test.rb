@@ -1,6 +1,6 @@
 require "test_helper"
 
-class DreamTest < ActiveSupport::TestCase
+class BoatTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
