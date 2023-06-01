@@ -1,0 +1,10 @@
+json.id book.id
+json.titolo book.titolo
+json.autore book.autore
+json.editore book.editore
+json.genere book.genere
+json.sintesi book.sintesi
+json.pagine book.pagine
+json.collocazione book.collocazione
+json.copertina url_for(book.copertina)
+json.url book_url(book)

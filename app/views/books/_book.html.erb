@@ -1,0 +1,44 @@
+<div id="<%= dom_id book %>">
+  <p>
+    <strong>Copertina:</strong>
+    <% if book.copertina.attached? %>
+      <%= image_tag url_for(book.copertina), class: 'w-100', style: 'max-width: 300px;' %>
+    <% end %>
+  </p>
+
+  <p>
+    <strong>Titolo:</strong>
+    <%= book.titolo %>
+  </p>
+
+  <p>
+    <strong>Autore:</strong>
+    <%= book.autore %>
+  </p>
+
+  <p>
+    <strong>Editore:</strong>
+    <%= book.editore %>
+  </p>
+
+  <p>
+    <strong>Genere:</strong>
+    <%= book.genere %>
+  </p>
+
+  <p>
+    <strong>Sintesi:</strong>
+    <%= book.sintesi %>
+  </p>
+
+  <p>
+    <strong>Pagine:</strong>
+    <%= book.pagine %>
+  </p>
+
+  <p>
+    <strong>Collocazione:</strong>
+    <%= book.collocazione %>
+  </p>
+
+</div>

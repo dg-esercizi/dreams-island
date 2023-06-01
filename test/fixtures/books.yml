@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titolo: MyString
+  autore: MyString
+  editore: MyString
+  genere: MyString
+  sintesi: MyText
+  pagine: 1
+  collocazione: MyString
+
+two:
+  titolo: MyString
+  autore: MyString
+  editore: MyString
+  genere: MyString
+  sintesi: MyText
+  pagine: 1
+  collocazione: MyString
